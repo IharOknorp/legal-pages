@@ -1,129 +1,314 @@
-# Privacy Policy for SparkleHabit
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | SparkleHabit</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --blue: #1598ff;
+      --blue-dark: #087bb6;
+      --ink: #1f2943;
+      --muted: #66738a;
+      --cream: #fff9ed;
+      --cream-border: #eee3c7;
+      --aqua: #eaf9ff;
+      --green: #25c99f;
+      --page: #f7fcff;
+      --white: rgba(255, 255, 255, 0.9);
+      --shadow: 0 22px 60px rgba(32, 85, 130, 0.14);
+    }
 
-Last updated: April 27, 2026
+    * {
+      box-sizing: border-box;
+    }
 
-Published URL: https://iharoknorp.github.io/legal-pages/sparkleHabit/privacy.html
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18% 8%, rgba(21, 152, 255, 0.16), transparent 30%),
+        radial-gradient(circle at 88% 18%, rgba(255, 214, 82, 0.22), transparent 28%),
+        linear-gradient(180deg, #ffffff 0%, var(--page) 44%, #fffaf0 100%);
+    }
 
-SparkleHabit is a habit tracker app for iPhone and iPad. This Privacy Policy explains what information is handled by the app, how it is stored, and how third-party services used by the app may process data.
+    a {
+      color: var(--blue-dark);
+      font-weight: 700;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
 
-## Summary
+    a:hover {
+      text-decoration: underline;
+    }
 
-SparkleHabit does not require an account and does not run its own backend service. Habit data is stored locally on your device and, when the widget is enabled, in the app's shared App Group container so the widget can show your progress.
+    .page {
+      width: min(920px, 100%);
+      margin: 0 auto;
+      padding: max(28px, env(safe-area-inset-top)) 18px 56px;
+    }
 
-The current app uses:
+    .hero {
+      padding: 30px clamp(22px, 5vw, 46px);
+      border: 1px solid rgba(21, 152, 255, 0.14);
+      border-radius: 34px;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
 
-- local habit storage for habits, schedules, notes, streaks, completions, archive/mastery status, and widget visibility;
-- local notification permissions for optional habit reminders;
-- Google AdMob to show ads on the Today and Activity screens unless ads have been removed;
-- RevenueCat and Apple In-App Purchase to handle the optional Remove Ads purchase and purchase restoration;
-- Apple's StoreKit review prompt to ask for an App Store rating at positive moments.
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 22px;
+      color: var(--blue);
+      font-weight: 900;
+      letter-spacing: 0;
+    }
 
-## Information You Create in the App
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 50%;
+      background: #fff1c6;
+      box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.72);
+    }
 
-When you use SparkleHabit, you may create or edit:
+    .brand-mark::before {
+      content: "✦";
+      color: var(--blue);
+      font-size: 24px;
+      line-height: 1;
+    }
 
-- habit names;
-- habit icons and color themes;
-- habit frequency, selected weekdays, and weekly targets;
-- reminder time and reminder enabled/disabled state;
-- notes entered for a habit;
-- check-in dates and completion history;
-- streak, level, mastery, archive, and delete state;
-- widget visibility preferences.
+    h1 {
+      margin: 0;
+      font-size: clamp(40px, 8vw, 72px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
 
-This information is stored in a local JSON file named `habits.json`. The file is stored in the app's shared App Group container when available, or in the app's local Application Support area as a fallback.
+    .subtitle {
+      max-width: 720px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: clamp(18px, 2.5vw, 22px);
+      line-height: 1.5;
+      font-weight: 650;
+    }
 
-SparkleHabit does not intentionally send your habit names, notes, schedules, or completion history to the app developer's server.
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
 
-## App Preferences
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--aqua);
+      color: var(--blue-dark);
+      font-weight: 800;
+    }
 
-The app also stores local preferences such as onboarding completion, haptics settings, week start preference, default habit frequency, review prompt state, and whether the Today helper card was dismissed. These preferences are stored on your device using iOS app storage.
+    .content {
+      margin-top: 22px;
+      padding: clamp(22px, 5vw, 42px);
+      border: 1px solid var(--cream-border);
+      border-radius: 30px;
+      background: rgba(255, 249, 237, 0.86);
+      box-shadow: 0 14px 42px rgba(91, 76, 35, 0.08);
+    }
 
-## Widgets
+    .callout {
+      margin: 0 0 30px;
+      padding: 22px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #e9f9ff 0%, #fff5cf 100%);
+      border: 1px solid rgba(21, 152, 255, 0.15);
+    }
 
-SparkleHabit includes a widget extension. The widget reads the same local App Group habit data used by the main app. Widget data is used to display habit progress and allow supported widget actions. The widget does not create a separate account or send habit data to a developer-operated server.
+    h2 {
+      margin: 34px 0 12px;
+      color: var(--blue);
+      font-size: clamp(24px, 4vw, 34px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
 
-## Notifications
+    h2:first-child {
+      margin-top: 0;
+    }
 
-Habit reminders are optional. If you enable reminders, SparkleHabit asks iOS for notification permission and schedules local notifications on your device. Reminder notifications may include the habit name and reminder text. These reminders are handled by iOS local notification APIs and do not require a SparkleHabit server.
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.7;
+      font-weight: 520;
+    }
 
-You can disable notifications in the app or in iOS Settings.
+    ul {
+      margin: 12px 0 22px;
+      padding: 0;
+      list-style: none;
+    }
 
-## Advertising
+    li {
+      position: relative;
+      margin: 10px 0;
+      padding-left: 28px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.55;
+      font-weight: 520;
+    }
 
-SparkleHabit uses Google AdMob to display banner ads in the app unless you have removed ads through the in-app purchase.
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.68em;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 5px rgba(37, 201, 159, 0.13);
+    }
 
-Google Mobile Ads SDK may process information such as device identifiers, advertising identifiers where available, app interaction data, diagnostic data, IP address, coarse location inferred from network information, and ad performance data. The exact processing is controlled by Google and the user's device and privacy settings.
+    code {
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(21, 152, 255, 0.1);
+      color: var(--ink);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+    }
 
-SparkleHabit does not intentionally send your habit names, notes, schedules, or completion history to Google AdMob.
+    .footer {
+      margin-top: 22px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
 
-Google resources:
+    @media (max-width: 560px) {
+      .page {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
 
-- Google Privacy Policy: https://policies.google.com/privacy
-- Google Mobile Ads SDK App Store data disclosure: https://developers.google.com/admob/ios/privacy/data-disclosure
+      .hero,
+      .content {
+        border-radius: 26px;
+      }
 
-## Purchases
+      p,
+      li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>SparkleHabit</span></div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">This policy explains what information SparkleHabit handles, how it is stored, and how app services such as widgets, notifications, ads, and purchases work.</p>
+      <div class="meta">
+        <span class="pill">Last updated: April 27, 2026</span>
+        <span class="pill">iPhone and iPad</span>
+      </div>
+    </header>
 
-SparkleHabit uses RevenueCat and Apple's in-app purchase system to provide the optional Remove Ads purchase and purchase restoration.
+    <article class="content">
+      <section class="callout">
+        <p><strong>Summary.</strong> SparkleHabit does not require an account and does not run its own backend service. Habit data is stored locally on your device and, when the widget is enabled, in the app's shared App Group container so the widget can show your progress.</p>
+      </section>
 
-When you buy or restore Remove Ads, Apple and RevenueCat may process purchase-related information such as product identifiers, transaction status, entitlement status, app user identifiers generated by the purchase SDK, store country, device/app information, and diagnostic information needed to manage the purchase.
+      <h2>What the App Uses</h2>
+      <p>The current app uses:</p>
+      <ul>
+        <li>local habit storage for habits, schedules, notes, streaks, completions, archive/mastery status, and widget visibility;</li>
+        <li>local notification permissions for optional habit reminders;</li>
+        <li>Google AdMob to show ads on the Today and Activity screens unless ads have been removed;</li>
+        <li>RevenueCat and Apple In-App Purchase to handle the optional Remove Ads purchase and purchase restoration;</li>
+        <li>Apple's StoreKit review prompt to ask for an App Store rating at positive moments.</li>
+      </ul>
 
-SparkleHabit uses this purchase information only to determine whether the Remove Ads entitlement is active.
+      <h2>Information You Create in the App</h2>
+      <p>When you use SparkleHabit, you may create or edit habit names, icons, color themes, frequency, selected weekdays, weekly targets, reminder settings, notes, check-in dates, completion history, streaks, levels, mastery state, archive state, delete state, and widget visibility preferences.</p>
+      <p>This information is stored in a local JSON file named <code>habits.json</code>. The file is stored in the app's shared App Group container when available, or in the app's local Application Support area as a fallback.</p>
+      <p>SparkleHabit does not intentionally send your habit names, notes, schedules, or completion history to the app developer's server.</p>
 
-RevenueCat resources:
+      <h2>App Preferences</h2>
+      <p>The app stores local preferences such as onboarding completion, haptics settings, week start preference, default habit frequency, review prompt state, and whether the Today helper card was dismissed. These preferences are stored on your device using iOS app storage.</p>
 
-- RevenueCat Privacy Policy: https://www.revenuecat.com/privacy
-- RevenueCat Apple App Privacy documentation: https://www.revenuecat.com/docs/platform-resources/apple-platform-resources/apple-app-privacy
+      <h2>Widgets</h2>
+      <p>SparkleHabit includes a widget extension. The widget reads the same local App Group habit data used by the main app. Widget data is used to display habit progress and allow supported widget actions. The widget does not create a separate account or send habit data to a developer-operated server.</p>
 
-Apple handles payment processing through the App Store. SparkleHabit does not receive your full payment card number.
+      <h2>Notifications</h2>
+      <p>Habit reminders are optional. If you enable reminders, SparkleHabit asks iOS for notification permission and schedules local notifications on your device. Reminder notifications may include the habit name and reminder text. These reminders are handled by iOS local notification APIs and do not require a SparkleHabit server.</p>
+      <p>You can disable notifications in the app or in iOS Settings.</p>
 
-## App Store Review Prompt
+      <h2>Advertising</h2>
+      <p>SparkleHabit uses Google AdMob to display banner ads in the app unless you have removed ads through the in-app purchase.</p>
+      <p>Google Mobile Ads SDK may process information such as device identifiers, advertising identifiers where available, app interaction data, diagnostic data, IP address, coarse location inferred from network information, and ad performance data. The exact processing is controlled by Google and the user's device and privacy settings.</p>
+      <p>SparkleHabit does not intentionally send your habit names, notes, schedules, or completion history to Google AdMob.</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDK App Store data disclosure</a></li>
+      </ul>
 
-SparkleHabit may use Apple's StoreKit review prompt after positive usage moments, such as completing habits or maintaining streaks. The app stores local flags to avoid repeatedly showing the prompt. Review submission and App Store account handling are managed by Apple.
+      <h2>Purchases</h2>
+      <p>SparkleHabit uses RevenueCat and Apple's in-app purchase system to provide the optional Remove Ads purchase and purchase restoration.</p>
+      <p>When you buy or restore Remove Ads, Apple and RevenueCat may process purchase-related information such as product identifiers, transaction status, entitlement status, app user identifiers generated by the purchase SDK, store country, device/app information, and diagnostic information needed to manage the purchase.</p>
+      <p>SparkleHabit uses this purchase information only to determine whether the Remove Ads entitlement is active. Apple handles payment processing through the App Store. SparkleHabit does not receive your full payment card number.</p>
+      <ul>
+        <li><a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></li>
+        <li><a href="https://www.revenuecat.com/docs/platform-resources/apple-platform-resources/apple-app-privacy">RevenueCat Apple App Privacy documentation</a></li>
+      </ul>
 
-## Data We Do Not Collect Directly
+      <h2>App Store Review Prompt</h2>
+      <p>SparkleHabit may use Apple's StoreKit review prompt after positive usage moments, such as completing habits or maintaining streaks. The app stores local flags to avoid repeatedly showing the prompt. Review submission and App Store account handling are managed by Apple.</p>
 
-The current app does not directly request or collect:
+      <h2>Data We Do Not Collect Directly</h2>
+      <p>The current app does not directly request or collect your name, email address, phone number, account password, precise location, contacts, photos, camera or microphone access, HealthKit data, calendar data, or a SparkleHabit cloud account.</p>
+      <p>Because habit names and notes are user-entered text, you should avoid entering sensitive personal information that you do not want stored on your device.</p>
 
-- your name;
-- email address;
-- phone number;
-- account password;
-- precise location;
-- contacts;
-- photos;
-- camera or microphone access;
-- HealthKit data;
-- calendar data;
-- a SparkleHabit cloud account.
+      <h2>Data Retention and Deletion</h2>
+      <p>Habit data stays on your device until you delete or archive habits, reset app data where available, or delete the app from your device. Deleting the app generally removes local app data managed by iOS.</p>
+      <p>Purchase records may remain with Apple and RevenueCat so purchases can be restored. Advertising and purchase service providers retain data according to their own policies.</p>
 
-Because habit names and notes are user-entered text, you should avoid entering sensitive personal information that you do not want stored on your device.
+      <h2>Security</h2>
+      <p>SparkleHabit relies on iOS device security and the app sandbox to protect local data. No method of storage or transmission can be guaranteed to be completely secure.</p>
 
-## Data Retention and Deletion
+      <h2>Children</h2>
+      <p>SparkleHabit is not directed to children under 13. The app does not knowingly collect personal information from children. If you believe a child has provided personal information through user-entered habit text, remove that data from the app or delete the app data.</p>
 
-Habit data stays on your device until you delete or archive habits, reset app data where available, or delete the app from your device. Deleting the app generally removes local app data managed by iOS.
+      <h2>International Processing</h2>
+      <p>Google, RevenueCat, and Apple may process information in countries outside your country of residence. Their privacy policies describe their processing practices in more detail.</p>
 
-Purchase records may remain with Apple and RevenueCat so purchases can be restored. Advertising and purchase service providers retain data according to their own policies.
+      <h2>Changes to This Policy</h2>
+      <p>This Privacy Policy may be updated when SparkleHabit changes its features, SDKs, data handling, advertising, purchases, or legal requirements. The "Last updated" date will be changed when the policy is updated.</p>
 
-## Security
+      <h2>Contact</h2>
+      <p>For questions about this Privacy Policy, use the App Store support contact for SparkleHabit or the project repository: <a href="https://github.com/IharOknorp/sparkleHabit">github.com/IharOknorp/sparkleHabit</a>.</p>
+    </article>
 
-SparkleHabit relies on iOS device security and the app sandbox to protect local data. No method of storage or transmission can be guaranteed to be completely secure.
-
-## Children
-
-SparkleHabit is not directed to children under 13. The app does not knowingly collect personal information from children. If you believe a child has provided personal information through user-entered habit text, remove that data from the app or delete the app data.
-
-## International Processing
-
-Google, RevenueCat, and Apple may process information in countries outside your country of residence. Their privacy policies describe their processing practices in more detail.
-
-## Changes to This Policy
-
-This Privacy Policy may be updated when SparkleHabit changes its features, SDKs, data handling, advertising, purchases, or legal requirements. The "Last updated" date will be changed when the policy is updated.
-
-## Contact
-
-For questions about this Privacy Policy, use the App Store support contact for SparkleHabit or the project repository:
-
-https://github.com/IharOknorp/sparkleHabit
-
+    <p class="footer">Published URL: https://iharoknorp.github.io/legal-pages/sparkleHabit/privacy.html</p>
+  </main>
+</body>
+</html>
