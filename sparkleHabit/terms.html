@@ -1,104 +1,304 @@
-# Terms of Use for SparkleHabit
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Use | SparkleHabit</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --blue: #1598ff;
+      --blue-dark: #087bb6;
+      --ink: #1f2943;
+      --muted: #66738a;
+      --cream: #fff9ed;
+      --cream-border: #eee3c7;
+      --aqua: #eaf9ff;
+      --gold: #ffd64e;
+      --green: #25c99f;
+      --page: #f7fcff;
+      --shadow: 0 22px 60px rgba(32, 85, 130, 0.14);
+    }
 
-Last updated: April 27, 2026
+    * {
+      box-sizing: border-box;
+    }
 
-Published URL: https://iharoknorp.github.io/legal-pages/sparkleHabit/terms.html
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 18% 8%, rgba(21, 152, 255, 0.16), transparent 30%),
+        radial-gradient(circle at 88% 18%, rgba(255, 214, 82, 0.22), transparent 28%),
+        linear-gradient(180deg, #ffffff 0%, var(--page) 44%, #fffaf0 100%);
+    }
 
-These Terms of Use ("Terms") apply to your use of SparkleHabit ("the App"). By using the App, you agree to these Terms. If you do not agree, do not use the App.
+    a {
+      color: var(--blue-dark);
+      font-weight: 700;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
 
-## The App
+    a:hover {
+      text-decoration: underline;
+    }
 
-SparkleHabit is a habit tracking app. It helps you create habits, check them in, view streaks and activity, receive optional reminders, use widgets, and optionally remove ads through an in-app purchase.
+    .page {
+      width: min(920px, 100%);
+      margin: 0 auto;
+      padding: max(28px, env(safe-area-inset-top)) 18px 56px;
+    }
 
-SparkleHabit is a productivity and wellness tool. It is not medical, mental health, legal, financial, or professional advice. You are responsible for how you use the App and for any decisions you make based on your habits or progress.
+    .hero {
+      padding: 30px clamp(22px, 5vw, 46px);
+      border: 1px solid rgba(21, 152, 255, 0.14);
+      border-radius: 34px;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
 
-## Your Habit Data
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 22px;
+      color: var(--blue);
+      font-weight: 900;
+      letter-spacing: 0;
+    }
 
-You control the habit information you enter into the App. This may include habit names, notes, schedules, reminders, check-ins, streaks, mastery status, and archive/delete state.
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 50%;
+      background: #fff1c6;
+      box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.72);
+    }
 
-You agree not to enter information that you do not have the right to use or that violates someone else's privacy or rights.
+    .brand-mark::before {
+      content: "✦";
+      color: var(--blue);
+      font-size: 24px;
+      line-height: 1;
+    }
 
-SparkleHabit stores habit data locally on your device and in the app's shared App Group container for widget support. The App does not currently provide a cloud sync account or backup service. You are responsible for device backups if you want to preserve your data outside the App.
+    h1 {
+      margin: 0;
+      font-size: clamp(40px, 8vw, 72px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
 
-## Notifications and Widgets
+    .subtitle {
+      max-width: 720px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: clamp(18px, 2.5vw, 22px);
+      line-height: 1.5;
+      font-weight: 650;
+    }
 
-Reminders are optional and depend on iOS notification permissions and system behavior. SparkleHabit cannot guarantee that a notification or widget timeline will appear at an exact time.
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
 
-Widgets may display habit progress on your device. Anyone with access to your device or visible widgets may be able to see that information.
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--aqua);
+      color: var(--blue-dark);
+      font-weight: 800;
+    }
 
-## Ads
+    .content {
+      margin-top: 22px;
+      padding: clamp(22px, 5vw, 42px);
+      border: 1px solid var(--cream-border);
+      border-radius: 30px;
+      background: rgba(255, 249, 237, 0.86);
+      box-shadow: 0 14px 42px rgba(91, 76, 35, 0.08);
+    }
 
-SparkleHabit may show ads through Google AdMob on screens such as Today and Activity. Ads may be personalized or contextual depending on Google, Apple, regional rules, and your device settings.
+    .callout {
+      margin: 0 0 30px;
+      padding: 22px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #e9f9ff 0%, #fff5cf 100%);
+      border: 1px solid rgba(21, 152, 255, 0.15);
+    }
 
-If you buy Remove Ads, SparkleHabit will hide the app's own AdMob banner placements while the Remove Ads entitlement is active.
+    h2 {
+      margin: 34px 0 12px;
+      color: var(--blue);
+      font-size: clamp(24px, 4vw, 34px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
 
-## In-App Purchases
+    h2:first-child {
+      margin-top: 0;
+    }
 
-SparkleHabit may offer a one-time Remove Ads purchase through Apple In-App Purchase, managed in the app through RevenueCat.
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.7;
+      font-weight: 520;
+    }
 
-The price shown inside the App may be a fallback display until the live App Store product price is loaded. The final price, currency, taxes, and payment terms shown in Apple's purchase sheet control the transaction.
+    ul {
+      margin: 12px 0 22px;
+      padding: 0;
+      list-style: none;
+    }
 
-Purchases are processed by Apple. Refunds, billing issues, and payment methods are handled by Apple under App Store rules. SparkleHabit includes a Restore Purchase action so you can restore an active Remove Ads entitlement where supported.
+    li {
+      position: relative;
+      margin: 10px 0;
+      padding-left: 28px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.55;
+      font-weight: 520;
+    }
 
-Buying Remove Ads does not transfer ownership of the App, its code, artwork, brand, or other intellectual property.
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.68em;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 5px rgba(37, 201, 159, 0.13);
+    }
 
-## Third-Party Services
+    .footer {
+      margin-top: 22px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
 
-SparkleHabit uses third-party services to support ads and purchases:
+    @media (max-width: 560px) {
+      .page {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
 
-- Google AdMob for advertising;
-- RevenueCat for purchase entitlement management;
-- Apple App Store and StoreKit for purchases, restoration, and review prompts.
+      .hero,
+      .content {
+        border-radius: 26px;
+      }
 
-Your use of those features may also be governed by those third parties' terms and policies.
+      p,
+      li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>SparkleHabit</span></div>
+      <h1>Terms of Use</h1>
+      <p class="subtitle">These terms apply to your use of SparkleHabit, including habit tracking, widgets, reminders, ads, and the optional Remove Ads purchase.</p>
+      <div class="meta">
+        <span class="pill">Last updated: April 27, 2026</span>
+        <span class="pill">iPhone and iPad</span>
+      </div>
+    </header>
 
-## Acceptable Use
+    <article class="content">
+      <section class="callout">
+        <p>These Terms of Use ("Terms") apply to your use of SparkleHabit ("the App"). By using the App, you agree to these Terms. If you do not agree, do not use the App.</p>
+      </section>
 
-You agree not to:
+      <h2>The App</h2>
+      <p>SparkleHabit is a habit tracking app. It helps you create habits, check them in, view streaks and activity, receive optional reminders, use widgets, and optionally remove ads through an in-app purchase.</p>
+      <p>SparkleHabit is a productivity and wellness tool. It is not medical, mental health, legal, financial, or professional advice. You are responsible for how you use the App and for any decisions you make based on your habits or progress.</p>
 
-- misuse, disrupt, reverse engineer, or attempt to compromise the App or its services;
-- use the App for unlawful, harmful, abusive, or infringing activity;
-- interfere with advertising, purchase, or entitlement systems except through normal App features;
-- upload, enter, or store content that violates another person's rights.
+      <h2>Your Habit Data</h2>
+      <p>You control the habit information you enter into the App. This may include habit names, notes, schedules, reminders, check-ins, streaks, mastery status, and archive/delete state.</p>
+      <p>You agree not to enter information that you do not have the right to use or that violates someone else's privacy or rights.</p>
+      <p>SparkleHabit stores habit data locally on your device and in the app's shared App Group container for widget support. The App does not currently provide a cloud sync account or backup service. You are responsible for device backups if you want to preserve your data outside the App.</p>
 
-## Availability and Changes
+      <h2>Notifications and Widgets</h2>
+      <p>Reminders are optional and depend on iOS notification permissions and system behavior. SparkleHabit cannot guarantee that a notification or widget timeline will appear at an exact time.</p>
+      <p>Widgets may display habit progress on your device. Anyone with access to your device or visible widgets may be able to see that information.</p>
 
-SparkleHabit may change over time. Features, designs, ads, prices, supported devices, widgets, and purchase options may be added, changed, or removed.
+      <h2>Ads</h2>
+      <p>SparkleHabit may show ads through Google AdMob on screens such as Today and Activity. Ads may be personalized or contextual depending on Google, Apple, regional rules, and your device settings.</p>
+      <p>If you buy Remove Ads, SparkleHabit will hide the app's own AdMob banner placements while the Remove Ads entitlement is active.</p>
 
-The App may not always be available, error-free, or compatible with every device, iOS version, widget configuration, notification setting, or third-party service state.
+      <h2>In-App Purchases</h2>
+      <p>SparkleHabit may offer a one-time Remove Ads purchase through Apple In-App Purchase, managed in the app through RevenueCat.</p>
+      <p>The price shown inside the App may be a fallback display until the live App Store product price is loaded. The final price, currency, taxes, and payment terms shown in Apple's purchase sheet control the transaction.</p>
+      <p>Purchases are processed by Apple. Refunds, billing issues, and payment methods are handled by Apple under App Store rules. SparkleHabit includes a Restore Purchase action so you can restore an active Remove Ads entitlement where supported.</p>
+      <p>Buying Remove Ads does not transfer ownership of the App, its code, artwork, brand, or other intellectual property.</p>
 
-## Intellectual Property
+      <h2>Third-Party Services</h2>
+      <p>SparkleHabit uses third-party services to support ads and purchases:</p>
+      <ul>
+        <li>Google AdMob for advertising;</li>
+        <li>RevenueCat for purchase entitlement management;</li>
+        <li>Apple App Store and StoreKit for purchases, restoration, and review prompts.</li>
+      </ul>
+      <p>Your use of those features may also be governed by those third parties' terms and policies.</p>
 
-SparkleHabit, including its app design, artwork, icons, text, source code, and brand elements, is owned by the app developer or licensed for use in the App. You may use the App only as allowed by these Terms and the App Store rules.
+      <h2>Acceptable Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>misuse, disrupt, reverse engineer, or attempt to compromise the App or its services;</li>
+        <li>use the App for unlawful, harmful, abusive, or infringing activity;</li>
+        <li>interfere with advertising, purchase, or entitlement systems except through normal App features;</li>
+        <li>upload, enter, or store content that violates another person's rights.</li>
+      </ul>
 
-You retain responsibility for the habit names, notes, and other text you enter into the App.
+      <h2>Availability and Changes</h2>
+      <p>SparkleHabit may change over time. Features, designs, ads, prices, supported devices, widgets, and purchase options may be added, changed, or removed.</p>
+      <p>The App may not always be available, error-free, or compatible with every device, iOS version, widget configuration, notification setting, or third-party service state.</p>
 
-## Disclaimer
+      <h2>Intellectual Property</h2>
+      <p>SparkleHabit, including its app design, artwork, icons, text, source code, and brand elements, is owned by the app developer or licensed for use in the App. You may use the App only as allowed by these Terms and the App Store rules.</p>
+      <p>You retain responsibility for the habit names, notes, and other text you enter into the App.</p>
 
-The App is provided "as is" and "as available." To the maximum extent allowed by law, SparkleHabit makes no warranties that the App will meet your expectations, improve your habits, preserve every streak, prevent data loss, show notifications at exact times, or be uninterrupted or error-free.
+      <h2>Disclaimer</h2>
+      <p>The App is provided "as is" and "as available." To the maximum extent allowed by law, SparkleHabit makes no warranties that the App will meet your expectations, improve your habits, preserve every streak, prevent data loss, show notifications at exact times, or be uninterrupted or error-free.</p>
 
-## Limitation of Liability
+      <h2>Limitation of Liability</h2>
+      <p>To the maximum extent allowed by law, SparkleHabit and its developer will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost data, lost profits, lost opportunities, missed reminders, broken streaks, or issues caused by third-party services.</p>
+      <p>Nothing in these Terms limits rights that cannot be limited under applicable consumer protection laws.</p>
 
-To the maximum extent allowed by law, SparkleHabit and its developer will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost data, lost profits, lost opportunities, missed reminders, broken streaks, or issues caused by third-party services.
+      <h2>Termination</h2>
+      <p>You may stop using SparkleHabit at any time and delete the App from your device. SparkleHabit may restrict or discontinue features if required for legal, security, technical, or platform reasons.</p>
 
-Nothing in these Terms limits rights that cannot be limited under applicable consumer protection laws.
+      <h2>Privacy</h2>
+      <p>Your use of SparkleHabit is also governed by the Privacy Policy: <a href="https://iharoknorp.github.io/legal-pages/sparkleHabit/privacy.html">https://iharoknorp.github.io/legal-pages/sparkleHabit/privacy.html</a>.</p>
 
-## Termination
+      <h2>Changes to These Terms</h2>
+      <p>These Terms may be updated when SparkleHabit changes its features, purchases, advertising, third-party services, or legal requirements. The "Last updated" date will be changed when the Terms are updated.</p>
 
-You may stop using SparkleHabit at any time and delete the App from your device. SparkleHabit may restrict or discontinue features if required for legal, security, technical, or platform reasons.
+      <h2>Contact</h2>
+      <p>For questions about these Terms, use the App Store support contact for SparkleHabit or the project repository: <a href="https://github.com/IharOknorp/sparkleHabit">github.com/IharOknorp/sparkleHabit</a>.</p>
+    </article>
 
-## Privacy
-
-Your use of SparkleHabit is also governed by the Privacy Policy:
-
-https://iharoknorp.github.io/legal-pages/sparkleHabit/privacy.html
-
-## Changes to These Terms
-
-These Terms may be updated when SparkleHabit changes its features, purchases, advertising, third-party services, or legal requirements. The "Last updated" date will be changed when the Terms are updated.
-
-## Contact
-
-For questions about these Terms, use the App Store support contact for SparkleHabit or the project repository:
-
-https://github.com/IharOknorp/sparkleHabit
+    <p class="footer">Published URL: https://iharoknorp.github.io/legal-pages/sparkleHabit/terms.html</p>
+  </main>
+</body>
+</html>
