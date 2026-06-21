@@ -1,0 +1,97 @@
+<!doctype html>
+<!--
+  TEMPLATE — not legal advice. Replace every [BRACKETED] value before publishing,
+  and have it reviewed. Host this file at a public URL and use that URL in the
+  in-app Settings (src/core/links.ts).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Terms of Service — Voidwing</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #020817;
+    color: #e8edff;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 32px 18px 64px;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 30px; font-weight: 800; margin: 0 0 4px; color: #ffffff; }
+  .updated { color: #8c97c2; font-size: 14px; margin: 0 0 28px; }
+  h2 { font-size: 20px; font-weight: 700; color: #4fc3f7; margin: 34px 0 10px; }
+  p, li { color: #cfd6f5; }
+  a { color: #6fd0ff; word-break: break-word; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  strong { color: #eef2ff; }
+  hr { border: none; border-top: 1px solid #1c2748; margin: 32px 0; }
+  .foot { color: #6f7aa3; font-size: 13px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Terms of Service — Voidwing</h1>
+  <p class="updated">Last updated: 21 June 2026</p>
+
+  <p>These Terms govern your use of the mobile game <strong>Voidwing</strong> ("the Game"), provided by <strong>Ihar Pronka</strong> ("we", "us"). By installing or playing the Game you agree to these Terms. If you do not agree, do not use the Game.</p>
+
+  <h2>1. Licence</h2>
+  <p>We grant you a personal, non-exclusive, non-transferable, revocable licence to install and play the Game on devices you own or control, for personal, non-commercial entertainment only.</p>
+
+  <h2>2. Ownership</h2>
+  <p>The Game, including its code, art, audio, characters and trademarks, is owned by us or our licensors and is protected by law. These Terms grant no rights other than the licence above.</p>
+
+  <h2>3. Virtual items and currency</h2>
+  <ul>
+    <li>The Game includes <strong>virtual coins</strong> and unlockable items earned through play or obtained by watching rewarded ads (and, where available, in-app purchases).</li>
+    <li>Virtual coins and items have <strong>no real-world monetary value</strong>, cannot be exchanged for cash, and are non-transferable.</li>
+    <li>We may change, expire or remove virtual items, and may adjust game balance, at any time.</li>
+    <li>Except where required by law, purchases and granted items are <strong>non-refundable</strong>. In-app purchases are processed and refunded by the App Store / Google Play under their terms.</li>
+  </ul>
+
+  <h2>4. Advertising</h2>
+  <p>The Game is free and supported by ads (Google AdMob). Some ads are <strong>rewarded</strong> and optional — you choose to watch them in exchange for in-game benefits. Ad availability is not guaranteed.</p>
+
+  <h2>5. Leaderboard and user content</h2>
+  <ul>
+    <li>You may set a public <strong>pilot name</strong>. Do not use names that are offensive, infringing, impersonating, or that contain personal information.</li>
+    <li>We may remove names or leaderboard entries, and reset leaderboards, at our discretion.</li>
+  </ul>
+
+  <h2>6. Acceptable use</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>cheat, exploit bugs, manipulate the leaderboard, or use bots/automation;</li>
+    <li>reverse engineer, decompile, or modify the Game except as allowed by law;</li>
+    <li>disrupt the Game's servers or other players;</li>
+    <li>use the Game unlawfully.</li>
+  </ul>
+  <p>We may suspend or terminate your access for violations.</p>
+
+  <h2>7. Disclaimers</h2>
+  <p>The Game is provided <strong>"as is"</strong> and <strong>"as available"</strong>, without warranties of any kind, to the maximum extent permitted by law. We do not warrant that the Game will be uninterrupted, error-free, or that progress/cloud data will never be lost.</p>
+
+  <h2>8. Limitation of liability</h2>
+  <p>To the maximum extent permitted by law, we are not liable for indirect, incidental, special or consequential damages, or for loss of data or virtual items. Our total liability is limited to the amount you paid us for the Game in the 12 months before the claim (which may be zero).</p>
+
+  <h2>9. Termination</h2>
+  <p>You may stop using the Game at any time by uninstalling it. We may suspend or discontinue the Game, in whole or in part, at any time.</p>
+
+  <h2>10. Governing law</h2>
+  <p>These Terms are governed by the laws of <strong>Poland</strong>, without regard to conflict-of-laws rules. Mandatory consumer-protection rights in your country of residence still apply.</p>
+
+  <h2>11. Changes</h2>
+  <p>We may update these Terms. Continued use after changes means you accept the updated Terms. See the "Last updated" date above.</p>
+
+  <h2>12. Contact</h2>
+  <p>Questions? Email <strong>oknorpcorp@gmail.com</strong>.</p>
+
+  <hr />
+  <p class="foot">© 2026 Ihar Pronka. Voidwing.</p>
+</main>
+</body>
+</html>
