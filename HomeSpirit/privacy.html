@@ -1,66 +1,152 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ghost Hotel Privacy Policy</title>
+  <title>HomeSpirit Privacy Policy</title>
   <style>
-    :root { color-scheme: light; --ink:#4f321e; --muted:#86643b; --teal:#0b7065; --gold:#d49a35; --paper:#fff0c9; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:#241a19; color:var(--ink); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    main { max-width:820px; margin:32px auto; padding:40px 44px; background:var(--paper); border:3px solid var(--gold); border-radius:18px; box-shadow:0 12px 40px #0008; }
-    h1 { margin:0 0 8px; color:var(--teal); font-size:32px; line-height:1.2; }
-    h2 { margin:30px 0 8px; color:#5a3218; font-size:21px; line-height:1.3; border-top:1px solid #e1b96f; padding-top:18px; }
-    .date { color:var(--muted); font-size:14px; font-weight:700; }
-    .notice { padding:14px 16px; border-left:4px solid var(--gold); background:#fff8df; }
-    a { color:var(--teal); }
-    @media (max-width:600px) { main { margin:0; min-height:100vh; border-width:0 0 3px; border-radius:0; padding:28px 22px; } h1 { font-size:27px; } }
-  </style>
+:root {
+  color-scheme: light;
+  --bg: #f7f4fb;
+  --surface: rgba(255, 255, 255, 0.86);
+  --text: #1f1d24;
+  --muted: #5f596a;
+  --primary: #5a3f99;
+  --border: rgba(90, 63, 153, 0.16);
+}
+* { box-sizing: border-box; }
+html { margin: 0; padding: 0; }
+body {
+  margin: 0;
+  padding: 40px 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  line-height: 1.62;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(222, 198, 255, 0.42), transparent 34%),
+    radial-gradient(circle at 92% 18%, rgba(194, 246, 230, 0.44), transparent 34%),
+    var(--bg);
+}
+main {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  padding: 36px clamp(22px, 5vw, 56px);
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 28px;
+  box-shadow: 0 22px 70px rgba(57, 46, 83, 0.12);
+  backdrop-filter: blur(18px);
+}
+h1, h2 { line-height: 1.16; margin: 0; letter-spacing: 0; }
+h1 { font-size: clamp(34px, 5vw, 54px); margin-bottom: 20px; }
+h2 { font-size: clamp(22px, 3vw, 30px); margin-top: 36px; margin-bottom: 12px; color: var(--primary); }
+p { margin: 0 0 16px; }
+ul { margin: 0 0 18px; padding-left: 24px; }
+li { margin: 7px 0; }
+a { color: var(--primary); font-weight: 650; text-decoration-thickness: 0.08em; text-underline-offset: 0.18em; }
+strong { font-weight: 750; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 28px 0; }
+.meta { color: var(--muted); font-size: 0.96rem; }
+@media (max-width: 560px) {
+  body { padding: 20px 12px; }
+  main { border-radius: 22px; padding: 26px 18px; }
+}
+</style>
 </head>
-<body><main>
-  <h1>Ghost Hotel Privacy Policy</h1>
-  <p class="date">Effective date: August 21, 2026</p>
-
-  <p class="notice">Data controller: <strong>Ihar Pronka</strong><br>
-    Contact: <a href="mailto:pronka.im@gmail.com"><strong>pronka.im@gmail.com</strong></a><br>
-    Address: <strong>ul. Hlonda 2, Warsaw, Poland</strong></p>
-
-  <p>This Privacy Policy explains how the Ghost Hotel: Logic Rooms mobile application (the “App”) processes information. It applies worldwide; additional rights may apply where you live.</p>
-
-  <h2>1. Information we process</h2>
-  <p><strong>Gameplay stored on your device.</strong> The App stores completed rooms, unlocked levels, stars, keys, hints, hearts, assignments, daily and event progress, achievements, settings, language, and an unfinished level. The App does not provide a Ghost Hotel account or cloud save, and this progress is not uploaded to us.</p>
-  <p><strong>Optional product analytics.</strong> Firebase Analytics is disabled by default. If you expressly allow analytics, the App sends gameplay events such as tutorial progress, level starts and results, mistakes, hints, achievements, virtual-currency changes, rewarded-ad outcomes, and sharing actions. Firebase may also process an app-instance identifier, app and device information, session information, IP address, and approximate location derived from IP. Analytics events do not intentionally contain your name, email, contacts, precise location, message contents, or shared screenshots.</p>
-  <p>Our Firebase Analytics integration is for product measurement only. On iOS it is built without advertising-identifier support; advertising storage, ad-user-data, ad-personalization signals, and Analytics registration with ad networks are disabled.</p>
-  <p><strong>Advertising.</strong> Optional rewarded ads are provided by Google Mobile Ads. Depending on your region, choices and device permission, Google and its advertising partners may process an advertising identifier, IP address, approximate location, device and app information, ad requests, impressions, interactions, and fraud-prevention signals. You can play without watching rewarded ads.</p>
-  <p><strong>Sharing.</strong> If you choose to share a hotel or Daily Challenge card, the App creates an image and text and opens the system share sheet. The recipient and the service you select process that content under their own policies.</p>
-  <p><strong>Device features.</strong> The App plays audio and may use vibration when enabled. It does not use the microphone to record you and does not request contacts or precise location.</p>
-
-  <h2>2. Why we process information</h2>
-  <p>Local gameplay data is processed to provide the game and save progress. With your consent, analytics help us understand stability, tutorial completion, level difficulty, feature use, and retention. Advertising data is processed to deliver and measure optional rewarded ads, prevent fraud, and, only where permitted by your choices and law, personalize advertising. Sharing is performed at your request. We do not use the App for decisions with legal or similarly significant effects.</p>
-  <p>For users in the EEA, UK and Switzerland, consent is the legal basis for Firebase Analytics and for personalized advertising or device storage where consent is required. Limited operational processing for contextual ads, security and fraud prevention may rely on legitimate interests where permitted by law.</p>
-
-  <h2>3. Your analytics choice</h2>
-  <p>The App does not send gameplay analytics events before you choose <strong>Allow analytics</strong>. This choice is separate from advertising consent and Apple’s App Tracking Transparency permission. You can allow or withdraw analytics at any time in <strong>Settings → Privacy → Analytics choices</strong>. Turning analytics off stops future collection and resets the local Firebase Analytics identifier. Withdrawal does not undo processing that occurred before withdrawal.</p>
-
-  <h2>4. Advertising consent and ATT</h2>
-  <p>Before the App initializes Google Mobile Ads or loads an ad, Google’s User Messaging Platform (UMP) checks the consent requirements for your region and shows a form when required. Ads may then be personalized, non-personalized, limited, or unavailable according to the resulting choices and configuration. If consent cannot be resolved on a first launch, the App does not request an ad.</p>
-  <p>On iOS, the App may show Apple’s App Tracking Transparency (ATT) prompt after the applicable UMP flow and before Google Mobile Ads is initialized. If you decline ATT, the advertising SDK cannot access the IDFA. Declining UMP consent or ATT does not block gameplay, remove existing progress, prevent earned rewards, or require payment. Where available, you can revisit advertising choices in <strong>Settings → Privacy → Ad privacy choices</strong>. You can also change ATT later in iOS Settings.</p>
-
-  <h2>5. Service providers and transfers</h2>
-  <p>Google provides Firebase Analytics, UMP, and Google Mobile Ads. A sharing app receives content only when you select it. Providers may process information outside your country using their applicable contractual safeguards, including standard contractual clauses where required. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a>.</p>
-
-  <h2>6. Retention and deletion</h2>
-  <p>Local gameplay data remains on your device until you use <strong>Reset progress</strong>, clear the App’s storage, or uninstall the App. Analytics event-level user data is retained in Firebase for no longer than the retention period configured for the property, up to 14 months; aggregated reports may remain after identifiers are removed. Advertising providers retain data under their policies and configuration. Correspondence is kept only as long as reasonably necessary to answer the request, meet legal obligations, and establish or defend claims.</p>
-
-  <h2>7. Your privacy rights</h2>
-  <p>Depending on where you live, you may request access, correction, deletion, restriction, portability, or withdrawal of consent, and may object to certain processing. You may also have rights to know, delete, correct, or opt out of sale, sharing, targeted advertising, or profiling under applicable US state law. We do not sell your locally stored gameplay progress.</p>
-  <p>Send requests to <a href="mailto:pronka.im@gmail.com">pronka.im@gmail.com</a>. We may need limited information to verify and handle a request. You may complain to your local data-protection authority; in Poland this is the <a href="https://uodo.gov.pl/en">Personal Data Protection Office (UODO)</a>.</p>
-
-  <h2>8. Children</h2>
-  <p>The App is not directed to children under 13 or a higher minimum age required in their country. We do not knowingly ask children for names, email addresses, contacts, or precise location. If you believe a child has provided personal information, contact us so we can investigate and delete it where appropriate.</p>
-
-  <h2>9. Security and changes</h2>
-  <p>We use reasonable technical and organizational measures appropriate to the information processed, but no system is completely secure. We may update this policy when the App, its providers, or law changes. We will update the effective date and provide additional notice for material changes where appropriate.</p>
-</main></body>
+<body>
+  <main>
+    <h1>HomeSpirit Privacy Policy</h1>
+    <p class="meta">Effective date: May 13, 2026</p>
+    <p>This Privacy Policy explains how HomeSpirit ("HomeSpirit", "the App", "we", "us", or "our") handles information when you use the HomeSpirit iOS application.</p>
+    <p>Developer: Ihar Pronka<br>Contact: pronko.im@gmail.com<br>Postal address: Poland, Warsaw ul. Hlonda </p>
+    <h2>Summary</h2>
+    <p>HomeSpirit is designed to work primarily on your device. The App helps you organize household cleaning tasks, choose rooms, track task completion, receive optional local reminders, personalize a home spirit, and unlock premium features.</p>
+    <p>We do not sell personal information. We do not use third-party advertising. We do not use App Tracking Transparency tracking. We do not require an account or login.</p>
+    <h2>Information stored in the App</h2>
+    <p>The App may store the following information locally on your device:</p>
+    <ul>
+    <li>Your home spirit name.</li>
+    <li>Selected rooms and household setup choices, such as adults count, whether children are present, whether pets are present, and your selected last-cleaning baseline.</li>
+    <li>Cleaning task data, including task names, room types, categories, frequency, duration, last completion dates, disabled tasks, and total completed tasks.</li>
+    <li>App preferences, including selected spirit skin, language, theme/accent settings, notification settings, notification time, and whether onboarding or prompts were shown.</li>
+    <li>In-app rating prompt state, such as a rating you choose inside the App before an App Store review prompt is requested.</li>
+    </ul>
+    <p>This local app data is used to provide the App's core functionality, including task suggestions, home health calculations, spirit mood, reminders, personalization, and premium UI behavior. This data is not sent to our own server.</p>
+    <h2>Purchases and premium access</h2>
+    <p>HomeSpirit uses Apple in-app purchases and RevenueCat to manage premium access, subscriptions, purchase restoration, offerings, and entitlement status.</p>
+    <p>When you buy, restore, or check premium access, Apple and RevenueCat may process purchase and technical information, including App Store receipt information, product identifiers, transaction status, device/app technical information, and RevenueCat customer identifiers. We do not receive your payment card number. Payment processing is handled by Apple.</p>
+    <p>RevenueCat's privacy policy is available at: <a href="https://www.revenuecat.com/privacy/">https://www.revenuecat.com/privacy/</a></p>
+    <p>Apple's privacy information is available at: <a href="https://www.apple.com/privacy/">https://www.apple.com/privacy/</a></p>
+    <h2>Notifications</h2>
+    <p>If you enable reminders, HomeSpirit asks iOS for notification permission and schedules local daily notifications on your device. Notifications may include your spirit name and the number of overdue tasks.</p>
+    <p>You can disable notifications in the App settings or in iOS Settings. If notifications are disabled, pending HomeSpirit reminders are cancelled.</p>
+    <p>HomeSpirit does not use a server to send marketing push notifications.</p>
+    <h2>App Store ratings and reviews</h2>
+    <p>HomeSpirit may ask whether you like the App after you have completed tasks. If you choose a high rating, HomeSpirit may use Apple's official StoreKit review prompt. Apple processes App Store ratings and reviews under Apple's own terms and privacy practices.</p>
+    <h2>Support communications</h2>
+    <p>If you contact us by email or another support channel, we may receive the information you choose to provide, such as your email address, message content, screenshots, and diagnostic details. We use this information only to respond to you, troubleshoot issues, improve the App, and meet legal obligations.</p>
+    <h2>Information we do not collect</h2>
+    <p>Based on the current App implementation, HomeSpirit does not request or collect:</p>
+    <ul>
+    <li>Precise location.</li>
+    <li>Contacts.</li>
+    <li>Photos or videos.</li>
+    <li>Camera access.</li>
+    <li>Microphone access.</li>
+    <li>Health data.</li>
+    <li>Advertising identifiers for tracking.</li>
+    <li>Social login credentials.</li>
+    </ul>
+    <p>If future versions add any of these features, we will update this Privacy Policy and App Store privacy disclosures before or when those changes are released.</p>
+    <h2>How we use information</h2>
+    <p>We use information for the following purposes:</p>
+    <ul>
+    <li>To provide App features, including onboarding, task planning, room checklists, timer screens, completion screens, spirit mood, and home health calculations.</li>
+    <li>To save your preferences and progress locally.</li>
+    <li>To schedule optional local reminders.</li>
+    <li>To provide premium access, purchase restoration, and subscription status through Apple and RevenueCat.</li>
+    <li>To respond to support requests.</li>
+    <li>To maintain security, prevent fraud, debug issues, and comply with applicable laws and App Store requirements.</li>
+    </ul>
+    <h2>Sharing of information</h2>
+    <p>We do not sell your personal information.</p>
+    <p>We may share or make information available only in the following limited cases:</p>
+    <ul>
+    <li>With Apple, when you use App Store services, in-app purchases, subscriptions, refunds, ratings, reviews, or device notification permissions.</li>
+    <li>With RevenueCat, for purchase management, subscription status, entitlement validation, and restore purchases.</li>
+    <li>With service providers that help us operate support or legal compliance, if applicable.</li>
+    <li>If required by law, regulation, legal process, or to protect rights, safety, and security.</li>
+    <li>With your consent.</li>
+    </ul>
+    <p>Third-party providers are expected to protect user data consistently with applicable law and their own privacy obligations.</p>
+    <h2>Retention and deletion</h2>
+    <p>Local app data remains on your device until you delete the App, reset App data if such an option is available, or change/delete the relevant information inside the App.</p>
+    <p>Purchase and subscription records may be retained by Apple and RevenueCat according to their own legal, accounting, fraud prevention, and service retention requirements.</p>
+    <p>Support emails are retained only as long as reasonably necessary to respond, troubleshoot, maintain records, and comply with legal obligations.</p>
+    <p>To request deletion of data that we can access, contact us at pronko.im@gmail.com. Some data, such as App Store purchase history, may need to be managed through Apple.</p>
+    <h2>Your choices and rights</h2>
+    <p>Depending on where you live, you may have rights to request access, correction, deletion, restriction, portability, or objection to processing of your personal information.</p>
+    <p>You can:</p>
+    <ul>
+    <li>Delete the App to remove local app data from your device.</li>
+    <li>Disable notifications in the App or iOS Settings.</li>
+    <li>Manage subscriptions and purchase history through your Apple ID settings.</li>
+    <li>Contact us at pronko.im@gmail.com to request assistance with data we can access.</li>
+    </ul>
+    <p>California residents: we do not sell personal information and do not share personal information for cross-context behavioral advertising.</p>
+    <p>European Economic Area, United Kingdom, and Switzerland users: where applicable, we process data to perform the app service you request, based on your consent, to comply with legal obligations, or for legitimate interests such as security, support, and product improvement where those interests are not overridden by your rights.</p>
+    <h2>Children</h2>
+    <p>HomeSpirit is a household organization app and is not directed to children under 13. The App may let an adult indicate that children live in the household so the App can adapt task suggestions. That setting is household context and is not intended to create a child profile or collect child personal information.</p>
+    <p>If you believe a child has provided personal information to us, contact us at pronko.im@gmail.com and we will take appropriate action.</p>
+    <h2>International transfers</h2>
+    <p>Apple, RevenueCat, and other service providers may process information in countries other than your own. Where required, such transfers are handled under appropriate legal safeguards.</p>
+    <h2>Security</h2>
+    <p>We use reasonable technical and organizational measures appropriate to the App's scope. Local app data is stored on your device using iOS app storage. No method of storage or transmission is completely secure, so we cannot guarantee absolute security.</p>
+    <h2>Changes to this Privacy Policy</h2>
+    <p>We may update this Privacy Policy when the App, legal requirements, or our data practices change. The "Effective date" above shows when this version became effective. If changes are material, we will provide notice as appropriate, such as through the App or App Store listing.</p>
+    <h2>Contact</h2>
+    <p>For privacy questions or requests, contact:</p>
+    <p>Ihar Pronka<br>pronko.im@gmail.com</p>
+  </main>
+</body>
 </html>
